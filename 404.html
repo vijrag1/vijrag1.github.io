@@ -1,38 +1,65 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CC93XZ9WS8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-CC93XZ9WS8');
-</script>
-
-    <title>Oops| Vijay Raghunathan</title>
-    <link type="text/css" rel="stylesheet" href="css/404.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CC93XZ9WS8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-CC93XZ9WS8');
+    </script>
+    <title>Lost in Space?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('img/banner_bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .denied__wrapper {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 2rem;
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 6rem;
+            margin: 0;
+        }
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .denied__link {
+            background-color: #2f3133;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
     <link rel="icon" type="image/x-icon" href="../images/tsParticles-64.png" />
-  </head>
-
-  <body class="permission_denied">
-    <div id="tsparticles"></div>
+</head>
+<body>
     <div class="denied__wrapper">
-      <h1>404</h1>
-      <h3>
-        LOST IN <span>SPACE</span> ? <br>Hmm, looks like that page doesn't
-        exist.
-      </h3>
-      <img id="astronaut" src="images/astronaut.svg" />
-      <img id="planet" src="images/planet.svg" />
-      <a href="https://vijayraghunathan.com/"><button class="denied__link">Go Home</button></a>
+        <h1>404</h1>
+        <h3>Hmm, looks like that page doesn't exist.</h3>
+        <a href="https://vijayraghunathan.com/"><button class="denied__link">Go Home</button></a>
     </div>
-
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"
-    ></script>
-    <script type="text/javascript" src="js/404.js"></script>
-  </body>
+</body>
 </html>
