@@ -211,9 +211,10 @@
     display:flex;
     overflow-x:auto;
     gap:16px;
-    margin:0 -28px;
-    padding:4px 28px 20px;
+    margin:0;
+    padding:4px 0 20px;
     scroll-snap-type:x mandatory;
+    scroll-padding-left:0;
     -webkit-overflow-scrolling:touch;
     scrollbar-width:none;
   }
@@ -265,8 +266,6 @@
       display:grid;
       grid-template-columns:repeat(2, 1fr);
       overflow-x:visible;
-      margin:0;
-      padding:0;
     }
     .card-track .card{
       flex:none;
@@ -278,6 +277,14 @@
   @media (max-width:520px){
     .nav-links{gap:14px;}
     header.hero{padding:60px 0 40px;}
+
+    nav .wrap{
+      flex-direction:column;
+      align-items:flex-start;
+      gap:8px;
+      padding-top:14px;
+      padding-bottom:14px;
+    }
   }
 </style>
 </head>
@@ -423,7 +430,7 @@
       <button type="button" aria-label="Scroll right" onclick="scrollTrack('writing-track',1)">&rarr;</button>
     </div>
 
-    <p class="fine" style="margin-top:26px;">Also writes for <a href="https://apac.entrepreneur.com/author/vijay-raghunathan" target="_blank" rel="noopener">Entrepreneur</a>, on digital twins, blockchain, and emerging tech. Recognised among <a href="https://www.thinkers360.com/tl/vijayraghunathan" target="_blank" rel="noopener">Thinkers360's</a> global thought leaders.</p>
+    <p class="fine" style="margin-top:26px;">Also writes for <a href="https://apac.entrepreneur.com/author/vijay-raghunathan" target="_blank" rel="noopener">Entrepreneur Asia Pacific</a>, on digital twins, blockchain, and emerging tech. Recognised among <a href="https://www.thinkers360.com/tl/vijayraghunathan" target="_blank" rel="noopener">Thinkers360's</a> global thought leaders.</p>
   </section>
 
 
