@@ -1,65 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CC93XZ9WS8"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-CC93XZ9WS8');
-    </script>
-    <title>Lost in Space?</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-image: url('img/banner_bg.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-        }
-        .denied__wrapper {
-            text-align: center;
-            background-color: rgba(0, 0, 0, 0.6);
-            padding: 2rem;
-            border-radius: 10px;
-        }
-        h1 {
-            font-size: 6rem;
-            margin: 0;
-        }
-        h3 {
-            font-size: 1.5rem;
-            margin-bottom: 2rem;
-        }
-        .denied__link {
-            background-color: #2f3133;
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-    </style>
-    <link rel="icon" type="image/x-icon" href="../images/tsParticles-64.png" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CC93XZ9WS8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CC93XZ9WS8');
+</script>
+<title>Page Not Found | Vijay Raghunathan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,450;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FFFFFF;
+    --ink:#1A1A1A;
+    --ink-soft:#4A4A4A;
+    --tech:#8A247F;
+    --tech-soft:#B44FA8;
+    --warm:#D4A800;
+    --warm-soft:#F5C842;
+    --line:#F0D3DC;
+    --tint:#FCEEF5;
+  }
+  *{box-sizing:border-box;}
+  html,body{height:100%;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'IBM Plex Sans', sans-serif;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:100vh;
+    padding:24px;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .card{
+    max-width:480px;
+    width:100%;
+    text-align:center;
+    padding:48px 32px;
+  }
+
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:0.78rem;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--tech);
+    margin-bottom:20px;
+  }
+
+  .code{
+    font-family:'Fraunces',serif;
+    font-weight:300;
+    font-size:clamp(4.5rem, 18vw, 7.5rem);
+    line-height:1;
+    color:var(--tech);
+    margin-bottom:8px;
+    position:relative;
+    display:inline-block;
+  }
+
+  h1{
+    font-family:'Fraunces',serif;
+    font-weight:450;
+    font-size:1.5rem;
+    margin:0 0 14px;
+    line-height:1.3;
+  }
+
+  p.sub{
+    font-size:1rem;
+    color:var(--ink-soft);
+    max-width:360px;
+    margin:0 auto 34px;
+    line-height:1.6;
+  }
+
+  /* trail motif: paw prints wandering off, echoing the site's tech-to-animal thread */
+  .trail{
+    width:220px;
+    height:40px;
+    margin:0 auto 30px;
+    display:block;
+  }
+
+  .actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    justify-content:center;
+  }
+  .btn{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:0.85rem;
+    text-decoration:none;
+    padding:11px 22px;
+    border-radius:4px;
+    border:1px solid var(--tech);
+    color:var(--tech);
+    transition:background 0.15s, color 0.15s;
+  }
+  .btn:hover{
+    background:var(--tech);
+    color:var(--paper);
+  }
+  .btn.primary{
+    background:var(--tech);
+    color:var(--paper);
+  }
+  .btn.primary:hover{
+    background:var(--warm);
+    border-color:var(--warm);
+    color:var(--ink);
+  }
+
+  .fine{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:0.72rem;
+    color:var(--ink-soft);
+    margin-top:36px;
+  }
+</style>
 </head>
 <body>
-    <div class="denied__wrapper">
-        <h1>404</h1>
-        <h3>Hmm, looks like that page doesn't exist.</h3>
-        <a href="https://vijayraghunathan.com/"><button class="denied__link">Go Home</button></a>
+
+  <div class="card">
+    <div class="eyebrow">Off the trail</div>
+
+    <div class="code">404</div>
+
+    <svg class="trail" viewBox="0 0 220 40" aria-hidden="true">
+      <!-- paw print -->
+      <g fill="#8A247F" opacity="0.85">
+        <ellipse cx="14" cy="30" rx="6" ry="4.8"/>
+        <ellipse cx="4" cy="20" rx="2.6" ry="2"/>
+        <ellipse cx="10" cy="16" rx="2.6" ry="2"/>
+        <ellipse cx="17" cy="16" rx="2.6" ry="2"/>
+        <ellipse cx="22" cy="20" rx="2.6" ry="2"/>
+      </g>
+      <!-- human footprint -->
+      <g fill="#B44FA8" opacity="0.65">
+        <ellipse cx="63" cy="12" rx="4.6" ry="6.4" transform="rotate(-12 63 12)"/>
+        <ellipse cx="57" cy="4" rx="1.5" ry="1.2"/>
+        <ellipse cx="61" cy="2" rx="1.4" ry="1.1"/>
+        <ellipse cx="65" cy="1.6" rx="1.3" ry="1"/>
+        <ellipse cx="69" cy="2.4" rx="1.2" ry="0.9"/>
+      </g>
+      <!-- paw print -->
+      <g fill="#B44FA8" opacity="0.5">
+        <ellipse cx="122" cy="26" rx="4.8" ry="3.8"/>
+        <ellipse cx="114" cy="19" rx="2" ry="1.6"/>
+        <ellipse cx="119" cy="16" rx="2" ry="1.6"/>
+        <ellipse cx="125" cy="16" rx="2" ry="1.6"/>
+        <ellipse cx="130" cy="19" rx="2" ry="1.6"/>
+      </g>
+      <!-- human footprint -->
+      <g fill="#D68ED0" opacity="0.45">
+        <ellipse cx="178" cy="10" rx="3.6" ry="5" transform="rotate(-10 178 10)"/>
+        <ellipse cx="173" cy="4" rx="1.2" ry="0.95"/>
+        <ellipse cx="176.5" cy="2.4" rx="1.1" ry="0.85"/>
+        <ellipse cx="180" cy="2" rx="1" ry="0.8"/>
+        <ellipse cx="183" cy="2.8" rx="0.9" ry="0.7"/>
+      </g>
+    </svg>
+
+    <h1>Looks like you wandered where you shouldn't have.</h1>
+    <p class="sub">The page you're looking for doesn't exist, or it's moved somewhere else. Let's get you back on track.</p>
+
+    <div class="actions">
+      <a class="btn primary" href="https://vijayraghunathan.com/">Go Home</a>
+      <a class="btn" href="https://www.linkedin.com/in/vijayraghunathan/" target="_blank" rel="noopener">Contact</a>
     </div>
+
+    <div class="fine">Vijay Raghunathan</div>
+  </div>
+
 </body>
 </html>
